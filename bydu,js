@@ -1,0 +1,42 @@
+// Mostra o alerta ao carregar a página
+window.onload = function(){
+
+    alert("Eu te amo, Byanca❤️");
+
+    // Depois que fechar o alerta mostra o conteúdo
+    document.getElementById("container").style.display = "block";
+
+    // Começa a gerar corações
+    setInterval(createHeart, 300);
+};
+
+// Função que cria corações caindo
+function createHeart(){
+
+    const heart = document.createElement("div");
+
+    heart.classList.add("heart");
+    heart.innerHTML = "❤";
+
+    // posição aleatória
+    heart.style.left = Math.random() * 100 + "vw";
+
+    // duração aleatória
+    heart.style.animationDuration = (Math.random() * 3 + 2) + "s";
+
+    document.body.appendChild(heart);
+
+    // remove o coração depois da animação
+    setTimeout(()=>{
+        heart.remove();
+    },5000);
+}
+
+
+// Função que toca a música
+function playMusic(){
+
+    const music = document.getElementById("music");
+
+    music.play();
+}

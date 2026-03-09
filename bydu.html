@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bydu</title>
+
+<style>
+
+/* Fundo rosa */
+body{
+    margin:0;
+    overflow:hidden;
+    background:#ffb6c1;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Container central */
+#container{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    text-align:center;
+    display:none; /* só aparece depois do alerta */
+}
+
+/* Texto principal */
+h1{
+    color:white;
+    font-size:40px;
+    margin-bottom:30px;
+}
+
+/* Botões */
+button{
+    background:#ff4d88;
+    color:white;
+    border:none;
+    padding:15px 30px;
+    font-size:18px;
+    border-radius:10px;
+    cursor:pointer;
+    margin:10px;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#ff1a66;
+    transform:scale(1.05);
+}
+
+/* Corações */
+.heart{
+    position:absolute;
+    color:red;
+    font-size:20px;
+    animation:fall linear forwards;
+}
+
+/* Animação de queda */
+@keyframes fall{
+    0%{
+        transform:translateY(-10vh);
+        opacity:1;
+    }
+    100%{
+        transform:translateY(110vh);
+        opacity:0;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- Conteúdo principal -->
+<div id="container">
+    <h1>Vamos casar quando?</h1>
+
+    <button onclick="playMusic()">Agora</button>
+    <button onclick="playMusic()">Agora</button>
+</div>
+
+<!-- Áudio -->
+<audio id="music" loop>
+    <!-- COLOQUE AQUI O ARQUIVO DA MÚSICA -->
+    <source src="sailor-song.mp3" type="audio/mpeg">
+</audio>
+
+<script src="script.js"></script>
+
+</body>
+</html><!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pedido</title>
+
+<style>
+
+/* Fundo rosa */
+body{
+    margin:0;
+    overflow:hidden;
+    background:#ffb6c1;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Container central */
+#container{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    text-align:center;
+    display:none; /* só aparece depois do alerta */
+}
+
+/* Texto principal */
+h1{
+    color:white;
+    font-size:40px;
+    margin-bottom:30px;
+}
+
+/* Botões */
+button{
+    background:#ff4d88;
+    color:white;
+    border:none;
+    padding:15px 30px;
+    font-size:18px;
+    border-radius:10px;
+    cursor:pointer;
+    margin:10px;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#ff1a66;
+    transform:scale(1.05);
+}
+
+/* Corações */
+.heart{
+    position:absolute;
+    color:red;
+    font-size:20px;
+    animation:fall linear forwards;
+}
+
+/* Animação de queda */
+@keyframes fall{
+    0%{
+        transform:translateY(-10vh);
+        opacity:1;
+    }
+    100%{
+        transform:translateY(110vh);
+        opacity:0;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- Conteúdo principal -->
+<div id="container">
+    <h1>Vamos casar quando?</h1>
+
+    <button onclick="playMusic()">Agora</button>
+    <button onclick="playMusic()">Agora</button>
+</div>
+
+<!-- Áudio -->
+<audio id="music" loop>
+    <!-- COLOQUE AQUI O ARQUIVO DA MÚSICA -->
+    <source src="sailor-song.mp3" type="audio/mpeg">
+</audio>
+
+<script src="bydu,js"></script>
+
+</body>
+</html>
